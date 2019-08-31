@@ -32,9 +32,10 @@ export class CartComponent {
     this.checkoutForm.reset();
   }
 
-    RemoveItem(itemId) {
+    removeItem(itemId) {
     window.alert('The product has been removed!');
-    this.cartService.RemoveFromCart(itemId);
+    console.warn('Removed item:', this.cartService.removeFromCart(itemId) );
+    ;
   }
 
 }
